@@ -1,4 +1,6 @@
-# Waffle-Fish.github.io
+# Jhoshua Ampo
 
 ### Education
 Computer Science, CSUF
+
+### Projects
