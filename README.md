@@ -1,6 +1,4 @@
-# Jhoshua Ampo
-
-### Education
+# Education
 Computer Science, CSUF
 
-### Projects
+# Projects
