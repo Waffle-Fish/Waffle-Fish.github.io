@@ -16,43 +16,6 @@
   {% seo %}
   
   {% include head-custom.html %}
-
-  <style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-    }
-
-    /* Sidebar Styles */
-    #sidebar {
-        height: 100vh; /* Full viewport height */
-        width: 250px; /* Sidebar width */
-        position: fixed;
-        top: 0;
-        left: 0;
-        background-color: #333;
-        padding-top: 20px;
-        overflow-y: auto; /* Enables vertical scrolling */
-    }
-
-    #sidebar a {
-        display: block;
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        font-size: 32px;
-    }
-
-    #sidebar a:hover {
-        background-color: #575757;
-    }
-
-    /* Content Styles */
-    .content {
-        margin-left: 260px; /* Space for sidebar */
-        padding: 20px;
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -63,18 +26,6 @@
       <h2>{{ site.description | default: site.github.project_tagline }}</h2>
     </div>
   </header>
-
-  <div id="content-wrapper">
-    <aside id="sidebar">
-      <h2>Sidebar</h2>
-      <ul style="list-style-type: none;">
-        <li><a href="#about" class="sidebar-link">About Me</a></li>
-        <li><a href="#skills" class="sidebar-link">Skills</a></li>
-        <li><a href="#projects" class="sidebar-link">Projects</a></li>
-        <li><a href="#contact" class="sidebar-link">Contact</a></li>
-      </ul>
-    </aside>
-  </div>
 
   <div id="content-wrapper">
     <div class="inner clearfix">
@@ -122,41 +73,11 @@
     </div>
   </div>
 
-  <script>
-    // Get all links in the sidebar
-    const sidebarLinks = document.querySelectorAll('#sidebar a');
-
-    // Function to handle scroll event and highlight active link
-    function handleScroll() {
-        let currentSection = '';
-
-        // Loop through all sections to find the one currently in view
-        document.querySelectorAll('section').forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-
-            if (window.scrollY >= sectionTop - 50 && window.scrollY < sectionTop + sectionHeight - 50) {
-                currentSection = section.getAttribute('id');
-            }
-        });
-
-        // Loop through all sidebar links and highlight the active one
-        sidebarLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href').slice(1) === currentSection) {
-                link.classList.add('active');
-            }
-        });
-    }
-
-    // Listen for scroll event
-    window.addEventListener('scroll', handleScroll);
-    </script>
-
   <footer>
     <div class="inner">
       <p>&copy; 2025, Jhoshua Ampo. All Rights Reserved.</p>
     </div>
   </footer>
+
 </body>
 </html>
