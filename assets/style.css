@@ -68,3 +68,9 @@ body {
   padding: 10px;
   background: #2C3E50;
 }
+
+.whiteBackground {
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+}
