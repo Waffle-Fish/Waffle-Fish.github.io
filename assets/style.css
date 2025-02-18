@@ -15,8 +15,8 @@ body {
 }
 
 .hero-content .profile-pic {
-  width: 100px;
-  border-radius: 50%;
+  width: 200px;
+  border-radius: 80%;
 }
 
 .projects {
