@@ -60,7 +60,7 @@ body {
 .skills, .about {
   padding: 20px;
   background: #34495E;
-  text-align: center;
+  text-align: left;
 }
 
 .skills .wrap, .about .wrap {
