@@ -5,11 +5,80 @@
  *   '
  *   style.scss 2:9  root stylesheet */
 
-body::before {
+/* body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
   white-space: pre;
   display: block;
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
+} */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2C3E50;
+  color: white;
+}
+
+.hero {
+  text-align: center;
+  background-color: #34495E;
+  padding: 30px;
+}
+
+.hero-content .profile-pic {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.projects {
+  padding: 20px;
+  text-align: center;
+}
+
+.project-card {
+  background: #1ABC9C;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px auto;
+  width: 80%;
+}
+
+.project-info {
+  width: 60%;
+  text-align: left;
+}
+
+.project-media {
+  width: 35%;
+  background: #95A5A6;
+  text-align: center;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.btn {
+  background: #E67E22;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+}
+
+.skills, .about {
+  padding: 20px;
+  background: #34495E;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background: #2C3E50;
 }
