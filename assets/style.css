@@ -70,7 +70,12 @@ body {
 }
 
 .whiteBackground {
-  padding: 10px;
-  background-color: white;
-  border-radius: 8px;
+  background: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px auto;
+  width: 80%;
 }
