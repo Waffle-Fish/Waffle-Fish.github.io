@@ -1,18 +1,4 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 2 | @import './fontawesome/scss/fontawesome.scss';
- *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   style.scss 2:9  root stylesheet */
 
-/* body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-} */
 
 body {
   font-family: Arial, sans-serif;
