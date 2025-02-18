@@ -61,6 +61,7 @@ body {
   padding: 20px;
   background: #34495E;
   text-align: left;
+  display: flex;
 }
 
 .skills .wrap, .about .wrap {
