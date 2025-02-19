@@ -36,6 +36,7 @@ p, h1, h2, h3, h4, h5, h6 {
 /* 8. Improve line wrapping */
 p {
   text-wrap: pretty;
+  padding-bottom: 10px;
 }
 h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
@@ -85,21 +86,23 @@ body {
 }
 
 .project-info {
-  width: 60%;
+  width: 45%;
   text-align: left;
 }
 
 .project-media {
-  width: 35%;
+  /* width: 35%; */
   background: #95A5A6;
   text-align: center;
   padding: 40px;
   border-radius: 10px;
+  height: 80%;
 }
 
 .btn {
   background: #E67E22;
   border: none;
+  margin: 10px;
   padding: 10px;
   cursor: pointer;
   color: white;
@@ -120,7 +123,7 @@ body {
   padding: 20px;
   border-radius: 10px;
   margin: 10px auto;
-  width: 90%;
+  width: 80%;
 }
 
 .footer {
@@ -143,4 +146,19 @@ body {
 
 .hero-image {
   width:25%;
+}
+
+.more-projects {
+  margin-left: 10%;
+  margin-right: 80%;
+  width: 200px;
+  height: 80px;
+  font-size: large;
+}
+
+
+.read-more {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-size: medium;
 }
