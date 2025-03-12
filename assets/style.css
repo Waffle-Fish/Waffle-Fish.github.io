@@ -74,6 +74,7 @@ body {
   text-align: center;
 }
 
+
 .project-card {
   background: #1ABC9C;
   color: black;
@@ -88,15 +89,6 @@ body {
 .project-info {
   width: 45%;
   text-align: left;
-}
-
-.project-media {
-  /* width: 35%; */
-  background: #95A5A6;
-  text-align: center;
-  padding: 40px;
-  border-radius: 10px;
-  height: 80%;
 }
 
 .btn {
@@ -161,4 +153,27 @@ body {
   margin-top: 20px;
   margin-bottom: 0px;
   font-size: medium;
+}
+
+.project-card .project-info h3 {
+  font-size: 40px;
+}
+
+.project-card .project-info p {
+  font-size: 18px;
+}
+
+.project-card .project-info strong {
+  font-size: 20px;
+}
+
+.project-media {
+  background: #95A5A6;
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically if parent has a height */
+  width: 100%; /* Full width */
+  height: 100%; /* Optional: Makes it full-screen height */
 }
