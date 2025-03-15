@@ -74,7 +74,6 @@ body {
   text-align: center;
 }
 
-
 .project-card {
   background: #1ABC9C;
   color: black;
@@ -87,8 +86,27 @@ body {
 }
 
 .project-info {
-  width: 45%;
+  width: 100%;
+}
+.project-text {
+  height: 80%;
   text-align: left;
+}
+.project-btns {
+  height: 20%;
+  text-align: left;
+}
+
+.project-card .project-text p {
+  font-size: 18px;
+}
+
+.project-media {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically if parent has a height */
+  width: 80%; /* Full width */
+  height: 360px; /* Optional: Makes it full-screen height */
 }
 
 .btn {
@@ -148,32 +166,64 @@ body {
   font-size: large;
 }
 
-
 .read-more {
   margin-top: 20px;
   margin-bottom: 0px;
   font-size: medium;
 }
 
-.project-card .project-info h3 {
-  font-size: 40px;
-}
-
-.project-card .project-info p {
-  font-size: 18px;
-}
-
-.project-card .project-info strong {
-  font-size: 20px;
-}
-
-.project-media {
-  background: #95A5A6;
-  border-radius: 20px;
-
+.sticky-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #7088a0;
+  padding: 10px 20px;
   display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically if parent has a height */
-  width: 100%; /* Full width */
-  height: 100%; /* Optional: Makes it full-screen height */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  justify-content: flex-start;
+}
+
+
+.header-content {
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+}
+
+.info {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.social-icons a img {
+  width: 24px;
+  margin-left: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
