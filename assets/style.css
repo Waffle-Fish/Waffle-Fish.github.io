@@ -89,13 +89,13 @@ body {
   border-radius: 10px;
   margin: 16px auto;
   width: 80%;
+  height: 100%;
 }
 
 .project-card .project-info {
   width: 90%;
   padding-right: 80px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
 }
 .project-text {
   height: 80%;
@@ -104,7 +104,9 @@ body {
 .project-card .project-info .project-btns {
   /* height: 20%; */
   text-align: left;
-  justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
 }
 
 .project-card .project-gif {
@@ -117,7 +119,6 @@ body {
 }
 
 .project-media {
-  display: flex;
   justify-content: center; /* Centers horizontally */
   align-items: center; /* Centers vertically if parent has a height */
   width: 80%; /* Full width */
@@ -132,6 +133,7 @@ body {
   cursor: pointer;
   color: white;
   border-radius: 5px;
+  justify-content: flex-end;
 }
 
 .skills {
@@ -161,12 +163,6 @@ body {
   width: 240px;
   height: 60px;
   font-size: large;
-}
-
-.read-more {
-  margin-top: 20px;
-  margin-bottom: 0px;
-  font-size: medium;
 }
 
 .sticky-header {
