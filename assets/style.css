@@ -108,8 +108,8 @@ body {
 }
 
 .project-card .project-gif {
-  /* height: 20%; */
   width: 80%;
+  border: 3px solid #283848;
 }
 
 .project-card .project-text p {
