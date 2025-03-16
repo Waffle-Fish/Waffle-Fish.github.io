@@ -64,9 +64,15 @@ body {
   padding: 30px;
 }
 
-.hero-content .profile-pic {
-  width: 200px;
-  border-radius: 0%;
+.hero-text {
+  background: white;
+  color: black;
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px auto;
+  width: 80%;
+  flex-direction: column;
 }
 
 .projects {
@@ -81,20 +87,29 @@ body {
   justify-content: space-between;
   padding: 20px;
   border-radius: 10px;
-  margin: 10px auto;
+  margin: 16px auto;
   width: 80%;
 }
 
-.project-info {
-  width: 100%;
+.project-card .project-info {
+  width: 90%;
+  padding-right: 80px;
+  display: flex;
+  flex-direction: column;
 }
 .project-text {
   height: 80%;
   text-align: left;
 }
-.project-btns {
-  height: 20%;
+.project-card .project-info .project-btns {
+  /* height: 20%; */
   text-align: left;
+  justify-content: flex-end;
+}
+
+.project-card .project-gif {
+  /* height: 20%; */
+  width: 80%;
 }
 
 .project-card .project-text p {
@@ -129,40 +144,18 @@ body {
 .skills .wrap, .about .wrap {
   background: white;
   color: black;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   padding: 20px;
   border-radius: 10px;
-  margin: 10px auto;
+  margin: 10px;
   width: 80%;
-}
-
-.footer {
-  text-align: center;
-  padding: 10px;
-  background: white;
-  text-decoration: none;
-}
-
-.hero-text {
-  background: white;
-  color: black;
-  display: flex;
-  padding: 20px;
-  border-radius: 10px;
-  margin: 10px auto;
-  width: 60%;
-  flex-direction: column;
-}
-
-.hero-image {
-  width:25%;
 }
 
 .more-projects {
   margin-left: 10%;
   margin-right: 80%;
-  width: 200px;
-  height: 80px;
+  width: 240px;
+  height: 60px;
   font-size: large;
 }
 
@@ -226,4 +219,20 @@ nav ul li a {
   text-decoration: none;
   color: black;
   font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background: white;
+  text-decoration: none;
+}
+
+.project-card .project-info .project-text ul{
+  font-size: 18px;
+}
+
+.project-media iframe {
+  width: 98%;
+  height: 98%;
 }
