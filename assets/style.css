@@ -138,16 +138,13 @@ body {
 
 .skills {
   justify-content: center;
-}
-
-.skills, .about {
   padding: 20px;
   background: #34495E;
   text-align: left;
   display: flex;
 }
 
-.skills .wrap, .about .wrap {
+.skills .wrap{
   background: white;
   color: black;
   justify-content: space-between;
@@ -155,6 +152,7 @@ body {
   border-radius: 10px;
   margin: 10px;
   width: 80%;
+  font-size: 18px;
 }
 
 .more-projects {
