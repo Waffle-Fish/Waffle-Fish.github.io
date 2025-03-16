@@ -134,6 +134,10 @@ body {
   border-radius: 5px;
 }
 
+.skills {
+  justify-content: center;
+}
+
 .skills, .about {
   padding: 20px;
   background: #34495E;
@@ -236,3 +240,4 @@ nav ul li a {
   width: 98%;
   height: 98%;
 }
+
