@@ -49,16 +49,6 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-@media (max-width: 768px) {
-  body {
-    font-size: 16px;
-  }
-  .container {
-    width: 100%;
-    padding: 10px;
-  }
-}
-
 html {
   overflow-x: hidden;
   width: 100%;
@@ -86,7 +76,7 @@ body {
   padding: 20px;
   border-radius: 10px;
   margin: 10px auto;
-  width: 80%;
+  width: 80vw;
   flex-direction: column;
 }
 
@@ -104,11 +94,12 @@ body {
   background: #1ABC9C;
   color: black;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   padding: 20px;
   border-radius: 10px;
   margin: 16px auto;
-  width: 80%;
+  width: 80vw;
   height: 100%;
 }
 
@@ -132,7 +123,7 @@ body {
 .project-card .project-gif {
   width: 80%;
   height: 100%;
-  border: 3px solid #283848;
+  border: 4px solid #283848;
 }
 
 .project-card .project-text p {
@@ -140,10 +131,10 @@ body {
 }
 
 .project-media {
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically if parent has a height */
-  width: 80%; /* Full width */
-  height: 360px; /* Optional: Makes it full-screen height */
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  /* height: 360px; */
 }
 
 .projects a {
@@ -191,11 +182,11 @@ body {
   background: white;
   color: black;
   justify-content: space-between;
-  padding: 20px;
+  padding: 1.5vw;
   border-radius: 10px;
-  margin: 10px;
-  width: 80%;
-  font-size: 18px;
+  margin: 1vw;
+  width: 80vw;
+  font-size: 1rem;
 }
 
 .sticky-header {
@@ -219,6 +210,7 @@ body {
 .header-content {
   font-family: Arial, sans-serif;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   width: 100%;
@@ -283,4 +275,46 @@ nav ul li a {
   max-width: 50vw;
 }
 
+.project-card .project-info .project-text .h1{
+  font-size: 2.5rem;
+}
 
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .project-card {
+    width: 100%;
+    height: auto;
+    padding: 1vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* .project-card {
+    width: 100%;
+  } */
+
+  .sticky-header {
+    position: relative;
+  }
+
+  .header-content {
+    flex-direction: column;
+  }
+
+  .header-content .info {
+    justify-content: center;
+  }
+
+  .project-card .project-gif {
+    width: 95%;
+  }
+
+  .project-media iframe {
+    width: 100%;
+    height: auto;
+  }
+}
