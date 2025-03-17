@@ -95,6 +95,11 @@ body {
   text-align: center;
 }
 
+.resume {
+  padding: 20px;
+  text-align: center;
+}
+
 .project-card {
   background: #1ABC9C;
   color: black;
@@ -126,6 +131,7 @@ body {
 
 .project-card .project-gif {
   width: 80%;
+  height: 100%;
   border: 3px solid #283848;
 }
 
