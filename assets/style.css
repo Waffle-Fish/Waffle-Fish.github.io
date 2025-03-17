@@ -36,8 +36,9 @@ p, h1, h2, h3, h4, h5, h6 {
 /* 8. Improve line wrapping */
 p {
   text-wrap: pretty;
-  padding-bottom: 10px;
+  padding-bottom: clamp(0px, 1vw, 10px);
 }
+
 h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
@@ -172,7 +173,7 @@ body {
 
 .skills {
   justify-content: center;
-  padding: 20px;
+  padding: 2vw;
   background: #34495E;
   text-align: left;
   display: flex;
@@ -182,11 +183,11 @@ body {
   background: white;
   color: black;
   justify-content: space-between;
-  padding: 1.5vw;
+  padding-left: 1.5vw;
   border-radius: 10px;
   margin: 1vw;
   width: 80vw;
-  font-size: 1rem;
+  font-size: clamp(16px, 3vw, 18px);
 }
 
 .sticky-header {
