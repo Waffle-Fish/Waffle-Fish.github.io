@@ -86,6 +86,13 @@ body {
   text-align: center;
 }
 
+.projects-title {
+  font-size: clamp(40px, 5vw, 60px); 
+  text-align: left; 
+  padding-left: 10%;
+  color: #d07f00;
+}
+
 .resume {
   padding: 20px;
   text-align: center;
@@ -276,8 +283,8 @@ nav ul li a {
   max-width: 50vw;
 }
 
-.project-card .project-info .project-text .h1{
-  font-size: 2.5rem;
+.project-card .project-info .project-text h1{
+  font-size: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -293,10 +300,6 @@ nav ul li a {
     justify-content: center;
     align-items: center;
   }
-
-  /* .project-card {
-    width: 100%;
-  } */
 
   .sticky-header {
     position: relative;
@@ -317,5 +320,21 @@ nav ul li a {
   .project-media iframe {
     width: 100%;
     height: auto;
+  }
+
+  .projects-title {
+    padding-left: 0; 
+  }
+
+  .projects .project-card .project-info{
+    padding-right: 0;
+  }
+
+  .projects .project-card .project-info h1{
+    text-align: center;
+  }
+
+  .sticky-header .header-content .social-icons {
+    text-align: center;
   }
 }
