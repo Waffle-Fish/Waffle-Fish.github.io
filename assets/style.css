@@ -303,6 +303,7 @@ nav ul li a {
 
   .sticky-header {
     position: relative;
+    text-align: center;
   }
 
   .header-content {
