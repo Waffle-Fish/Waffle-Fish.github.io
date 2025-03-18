@@ -134,6 +134,10 @@ body {
   border: 4px solid #283848;
 }
 
+.project-card .project-gif img{
+  width: auto;
+}
+
 .project-card .project-text p {
   font-size: 18px;
 }
