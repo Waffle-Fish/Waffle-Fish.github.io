@@ -170,7 +170,7 @@ body {
   display: flex;            
   justify-content: center;  
   align-items: center;      
-  margin: 2vw;
+  margin: 1vw;
   padding: 1vw;  
   font-size: 1em;           
   width: auto;              
@@ -362,5 +362,10 @@ nav ul li a {
   
   .project-card .project-gif {
     order: 1;
+  }
+
+  .btn {
+    margin: 2vw;
+    padding: 2vw;
   }
 }
