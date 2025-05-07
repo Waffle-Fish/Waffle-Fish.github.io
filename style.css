@@ -1,0 +1,392 @@
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+  /* background-color: #DDDDDD; */
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.2;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+  padding-bottom: clamp(0px, 1vw, 10px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2C3E50;
+  color: black;
+}
+
+.hero {
+  text-align: center;
+  display: flex;
+  background-color: #34495E;
+  padding: 30px;
+}
+
+.hero-text {
+  background: white;
+  color: black;
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px auto;
+  width: 80vw;
+  flex-direction: column;
+}
+
+.projects {
+  padding: 20px;
+  text-align: center;
+}
+
+.projects-title {
+  font-size: clamp(40px, 5vw, 60px); 
+  text-align: left; 
+  padding-left: 10%;
+  color: #d07f00;
+}
+
+.resume {
+  background: #34495E;
+  padding: 20px;
+  text-align: center;
+}
+
+.project-card {
+  background: #1ABC9C;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 16px auto;
+  width: 80vw;
+  height: 100%;
+}
+
+.project-card .project-info {
+  width: 90%;
+  padding-right: 80px;
+  display: grid;
+  order: 1;
+}
+
+.project-text {
+  height: 80%;
+  text-align: left;
+}
+.project-card .project-info .project-btns {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.project-card .project-gif {
+  width: 70%;
+  height: 100%;
+  border: 4px solid #283848;
+  order: 2;
+}
+
+.project-card .project-gif img{
+  width: auto;
+}
+
+.project-card .project-text p {
+  font-size: 18px;
+}
+
+.project-media {
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  order: 2;
+  /* height: 360px; */
+}
+
+.projects a {
+  text-decoration: none
+}
+
+.btn {
+  background: #E67E22;
+  border: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  display: flex;            
+  justify-content: center;  
+  align-items: center;      
+  margin: 1vw;
+  padding: 1vw;  
+  font-size: 1em;           
+  width: auto;              
+  height: auto;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.more-projects-btn {
+  background: #E67E22;
+  border: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  justify-content: flex-end;
+  margin-left: 10vw;
+  width: auto;
+  font-size: 1.25em;
+}
+
+.skills {
+  justify-content: center;
+  padding: 2vw;
+  background: #34495E;
+  text-align: left;
+  display: flex;
+}
+
+.skills .wrap{
+  background: white;
+  color: black;
+  justify-content: space-between;
+  padding-left: 1.5vw;
+  border-radius: 10px;
+  margin: 1vw;
+  width: 80vw;
+  font-size: clamp(16px, 3vw, 18px);
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+  background-color: #7088a0;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  justify-content: flex-start;
+}
+
+
+.header-content {
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+}
+
+.info {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.social-icons a img {
+  width: 24px;
+  margin-left: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background: white;
+  text-decoration: none;
+}
+
+.project-card .project-info .project-text ul{
+  font-size: 18px;
+}
+
+.project-media iframe {
+  width: 98%;
+  height: 98%;
+}
+
+.resume-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resume-pic {
+  min-width: 80vmin;
+  max-width: 50vw;
+}
+
+.project-card .project-info .project-text h1{
+  font-size: 2rem;
+}
+
+@media (max-width: 1000px) {
+  body {
+    font-size: 16px;
+  }
+
+  .project-card {
+    width: 100%;
+    height: auto;
+    padding: 1vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sticky-header {
+    position: relative;
+    text-align: center;
+  }
+
+  .header-content {
+    flex-direction: column;
+  }
+
+  .header-content .info {
+    justify-content: center;
+  }
+
+  .project-card .project-gif {
+    width: 95%;
+    /* border: 2px solid #283848; */
+    order: 1;
+  }
+
+  .project-card .project-gif img{
+    border: 2px solid #283848;
+  }
+
+  .project-media iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  .projects-title {
+    padding-left: 0; 
+  }
+
+  .projects .project-card .project-info{
+    padding-right: 0;
+  }
+
+  .project-card .project-info{
+    padding-right: 0;
+    order: 2;
+  }
+  .projects .project-card .project-info h1{
+    text-align: center;
+  }
+
+  .sticky-header .header-content .social-icons {
+    text-align: center;
+  }
+
+  .project-card .project-media {
+    order: 1;
+  }
+
+
+  .btn {
+    margin: 2vw;
+    padding: 2vw;
+  }
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url(fonts/Nunito/Nunito-VariableFont_wght.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url(fonts/Nunito/Nunito-VariableFont_wght.ttf) format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url(fonts/Nunito/Nunito-Italic-VariableFont_wght.ttf) format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
