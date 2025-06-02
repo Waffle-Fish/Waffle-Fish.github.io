@@ -296,6 +296,41 @@ nav ul li a {
   font-size: 2rem;
 }
 
+/* READ MORE SECTIONS */
+.asol-read-more-hero-image {
+  display: flex; 
+  justify-content: center;
+  background-color: #c5503c;
+  background: linear-gradient(to right,
+    #c5523f 10%,
+    #cd5e4a 40%,
+    #e38f65 60%,
+    #e38f65 100%)
+}
+
+.read-more-sections {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.read-more-card {
+  background: #1ABC9C;
+  color: black;
+  padding: 20px;
+  margin: 10px;
+  width: 70%;
+  border-radius: 10px;
+  height: 100%;
+  /* padding: 20px;
+  margin: 16px auto;*/
+}
+
+.read-more-sections .read-more-image {
+  padding: 20px;
+  margin: 10px;
+}
+
 @media (max-width: 1000px) {
   body {
     font-size: 16px;
