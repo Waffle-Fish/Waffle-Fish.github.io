@@ -198,6 +198,71 @@ body {
   color: #A84A0A;
 }
 
+/* Skills */
+.skills-section,
+.about {
+  padding: 20px 20px 10px;
+}
+
+.skills-card {
+  background: white;
+  border-radius: 10px;
+  border-left: 6px solid #1ABC9C;
+  padding: 18px 24px;
+  width: 80vw;
+  margin: 0 auto;
+  display: grid;
+  gap: 12px;
+}
+
+.skill-row {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  align-items: center;
+  gap: 12px;
+}
+
+.skill-row h3 {
+  font-size: 1.05rem;
+}
+
+.tags {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tags li {
+  background: #2C3E50;
+  color: white;
+  font-size: 15px;
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
+.project-card .project-info .project-text ul.project-tags {
+  padding-left: 0;
+  line-height: 1.2;
+  margin: 8px 0 10px;
+}
+
+.project-card .project-info .project-text ul.project-tags li {
+  background: rgba(255, 255, 255, 0.85);
+  color: #1c2a38;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 0;
+}
+
+.about-text {
+  font-size: 17px;
+  line-height: 1.5;
+  margin-top: 8px;
+}
+
 /* Project card details */
 .project-title h1 {
   margin-bottom: 4px;
@@ -619,6 +684,19 @@ nav ul li a {
 
   .project-card .project-text .meta {
     justify-content: center;
+  }
+
+  .project-card .project-info .project-text ul.project-tags {
+    justify-content: center;
+  }
+
+  .skills-card {
+    width: 100%;
+  }
+
+  .skill-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
   }
 
   .project-title {
