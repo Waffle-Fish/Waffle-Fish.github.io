@@ -4,7 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jhoshua Ampo - Portfolio</title>
+  <title>Jhoshua Ampo - Game Programmer Portfolio</title>
+  <meta name="description" content="Jhoshua Ampo - Unity gameplay programmer. Lead developer of A Slice of Lunch on Steam, 25+ game jams.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jhoshua Ampo - Game Programmer">
+  <meta property="og:description" content="Unity gameplay programmer. Lead developer of A Slice of Lunch on Steam, 25+ game jams.">
+  <meta property="og:url" content="https://waffle-fish.github.io/">
+  <meta property="og:image" content="https://waffle-fish.github.io/assets/ASOL_TitleCard.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/0cd757c7bc.js" crossorigin="anonymous"></script>
   <link rel="icon" type="image/x-icon" href="assets/WaffleFish-logo.ico">
@@ -13,222 +20,228 @@
 <body>
   <header class="sticky-header">
     <div class="header-content">
-      <a href="index.html"><img src="assets/WaffleFish.png" width="80vw" alt="Profile Picture" class="profile-pic"></a>
+      <a href="index.html"><img src="assets/WaffleFish.png" width="80" alt="WaffleFish logo - home" class="profile-pic"></a>
       <div class="info">
         <h2>Jhoshua Ampo</h2>
         <p>Game Programmer</p>
       </div>
       <div class="social-icons">
-        <p><a href="https://github.com/Waffle-Fish" style="text-decoration: none"><i
-              class="fa-brands fa-github fa-2x"></i></a> | <a href="https://wafflefish.itch.io/"
-            style="text-decoration: none"><i class="fa-brands fa-itch-io fa-2x"></i></a> | <a
-            href="https://www.linkedin.com/in/jhoshua-ampo/" style="text-decoration: none"><i
-              class="fa-brands fa-linkedin fa-2x"></i></a></p>
-        <p><span style="font-size: large;"><a href="ampojhoshua@gmail.com">ampojhoshua@gmail.com</a></span></p>
+        <p>
+          <a href="https://github.com/Waffle-Fish" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github fa-2x"></i></a> |
+          <a href="https://wafflefish.itch.io/" target="_blank" rel="noopener" aria-label="itch.io"><i class="fa-brands fa-itch-io fa-2x"></i></a> |
+          <a href="https://www.linkedin.com/in/jhoshua-ampo/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+        </p>
+        <p class="contact-row">
+          <a href="mailto:ampojhoshua@gmail.com" class="header-email">ampojhoshua@gmail.com</a>
+          <a href="assets/Jhoshua_A_Resume.pdf" download="Jhoshua_A_Resume.pdf" class="btn header-resume-btn">Download Resume</a>
+        </p>
       </div>
     </div>
   </header>
 
   <div class="hero">
     <div class="hero-text">
-      <p style="font-size: clamp(10px, 5vw, 60px);"><Strong>Hello! I'm Jhoshua Ampo</Strong></p>
-      <p style="font-size: clamp(5px, 5vw, 30px);">
-        New grad, with a Bachelors in Computer Science @ CSU Fullerton.
+      <p class="hero-hello">Hello! I'm Jhoshua Ampo</p>
+      <h1 class="hero-title">I turn prototypes into shipped games.</h1>
+      <p class="hero-sub">
+        Lead developer of <a href="https://store.steampowered.com/app/3535290/A_Slice_of_Lunch/" target="_blank" rel="noopener"><strong>A Slice of Lunch</strong></a>,
+        out now in Early Access on Steam. Unity gameplay programmer and CS grad from CSU Fullerton.
       </p>
-      <p style="font-size: clamp(5px, 5vw, 30px);">
-        I’m a self-proclaimed game jam junkie who loves to design and program ideas to life.
-      </p>
+      <ul class="hero-stats">
+        <li><strong>Shipped</strong> on Steam</li>
+        <li><strong>Professional</strong> Unity experience</li>
+        <li><strong>25+</strong> game jams</li>
+        <li><strong>3</strong> jam awards</li>
+        <li><strong>9</strong> teams led</li>
+      </ul>
     </div>
   </div>
 
-  <section class="projects">
-    <h2 class="projects-title"><strong>Featured Projects</strong></h2>
+  <section class="experience">
+    <h2 class="section-title">Experience</h2>
+    <div class="exp-grid">
+      <div class="exp-card">
+        <div class="exp-head">
+          <h3>Unity Game Developer <span class="exp-org">· Bobaface LLC</span></h3>
+          <p class="exp-date">Jul '25 – Oct '25</p>
+        </div>
+        <ul>
+          <li><strong>Refactored legacy gameplay systems</strong> across a 100+ script codebase, removing 1,000+ redundant lines and cutting technical debt by ~30%</li>
+          <li><strong>Prototyped a Suika-like physics puzzle game</strong> in Unity to prove out mechanics and pitch the concept to stakeholders</li>
+        </ul>
+      </div>
+      <div class="exp-card">
+        <div class="exp-head">
+          <h3>Project Lead &amp; Lead Programmer <span class="exp-org">· A Slice of Lunch</span></h3>
+          <p class="exp-date">Sept '24 – Present</p>
+        </div>
+        <ul>
+          <li><strong>Led a 4-person indie team</strong> from prototype to Steam Early Access, setting creative direction, milestones, and priorities</li>
+          <li><strong>Shipped on Steam</strong>: published a playable demo, then launched the game in Early Access</li>
+          <li><strong>Wrote and maintain the GDD</strong> covering core mechanics, level design, cuisines, and the roadmap</li>
+        </ul>
+      </div>
+</div>
+    </div>
+  </section>
 
-    <!-- ASOL -->
-    <div class="project-card">
+  <section class="projects">
+    <h2 class="section-title">Featured Projects</h2>
+
+    <!-- A Slice of Lunch -->
+    <div class="project-card" id="a-slice-of-lunch">
       <div class="project-info">
         <div class="project-text">
           <div class="project-title">
             <h1>A Slice of Lunch</h1>
-            <p><i> Sept '24 - (Target) Nov '25</i></p>
-            <p><Strong>Role: </Strong>Lead Developer and Designer <Strong>| Game Engine:</Strong> Unity <Strong> | Team Size:</Strong> 4</i></p>
+            <p class="badge">Out now in Steam Early Access</p>
+            <p class="meta">
+              <span>Sept '24 – Present</span>
+              <span>Lead Developer &amp; Designer</span>
+              <span>Unity</span>
+              <span>Team of 4</span>
+            </p>
           </div>
           <div class="summary">
-            <p>
-              I finally finished making my lunch! But how will manage to fit it all into my lunchbox?
-              A Slice of Lunch is a cozy puzzle game where you use your tools to neatly organize your lunch however you desire, so long as you fit everything in your lunch box!
-            </p>
+            <p>A cozy puzzle game: slice, rotate, and drag your food until your whole lunch fits in the lunch box.</p>
+            <!-- TODO: add a traction line here, e.g. "1,000+ wishlists · 95% positive reviews" -->
             <h3>What I did</h3>
             <ul>
-              <li>I lead a 4 person team, including myself, to design, build, and publish a 2D puzzle game on Steam, 
-                overseeing creative direction, production milestones, and team coordination </li>
-              <li>I collaborate with my team to integrate features, art, and audio into each level to deliver cohesive and polished gameplay</li>
-              <li>I program core features such as slicing, rotating and moving food using custom input handling and Unity 
-                components such as polygon colliders, sprite masks, and transformations to ensure precise and responsive interactions</li>
-              <li>I design and maintain the Game Design Document (GDD), outlining core mechanics, level design, planned cuisines, and a development roadmap</li>
+              <li><strong>Built the core slicing, rotating, and dragging systems</strong> with custom input handling, polygon colliders, and sprite masks for precise, responsive control</li>
+              <li><strong>Integrated features, art, and audio</strong> into every level with the team for cohesive, polished gameplay</li>
             </ul>
           </div>
         </div>
         <div class="project-btns">
-          <a href="https://store.steampowered.com/app/3535290/A_Slice_of_Lunch/" target="_blank"><button class="btn store-page">Store Page</button></a>
-          <!-- <a href="asol.html"><button class="btn read-more">Read More</button></a> -->
+          <a href="https://store.steampowered.com/app/3535290/A_Slice_of_Lunch/" target="_blank" rel="noopener" class="btn">Steam Page</a>
+          <!-- <a href="asol.html" class="btn">Read More</a> -->
         </div>
       </div>
-      <!-- <div class="project-gif">
-        <img src="assets/ASOL_DemoGif.gif" alt="ASOL Demo">
-      </div> -->
       <div class="project-media">
-        <iframe src="https://www.youtube.com/embed/hMvvdsd_Usg?si=uV3VN26rstqNC-Fo" frameborder="1"
+        <iframe src="https://www.youtube.com/embed/hMvvdsd_Usg" title="A Slice of Lunch trailer"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
+          allowfullscreen loading="lazy">
         </iframe>
       </div>
     </div>
 
     <!-- Rhythmic Harmony -->
-    <div class="project-card">
+    <div class="project-card" id="rhythmic-harmony">
       <div class="project-info">
         <div class="project-text">
           <div class="project-title">
             <h1>Rhythmic Harmony</h1>
-            <p><i> Mar'25 </i></p>
-            <p><Strong>Role: </Strong>Gameplay Programmer <Strong>| Game Engine:</Strong> Unity <Strong> | TeamSize:</Strong> 8</i></p>
+            <p class="meta">
+              <span>Mar '25</span>
+              <span>Lead Gameplay Programmer</span>
+              <span>Unity</span>
+              <span>Team of 8</span>
+            </p>
           </div>
           <div class="summary">
-            <p>
-              A 2D rhythm game with 2 tracks and 4 inputs. Developed in 4 days for the <strong>Girly Game Jam</strong>
-              with the theme of <strong>Opposites Attract</strong>.
-            </p>
+            <p>A 2D rhythm game with 2 tracks and 4 inputs, made in 4 days for the <strong>Girly Game Jam</strong> (theme: <em>Opposites Attract</em>).</p>
             <h3>What I did</h3>
             <ul>
-              <li> Designed and developed a beatmap creation tool using CSV files, enabling team members to create
-                beatmaps without having to use Unity</li>
-              <li> Implemented player controls that allows the player to "hit a beat" and also the scoring system that's
-                based on how accurately the player hits the beat on time </li>
-              <li> Animated the player, beats, including an end-of-level cutscene</li>
+              <li><strong>Built a CSV-based beatmap pipeline</strong> so teammates could author levels without opening Unity</li>
+              <li><strong>Implemented hit detection and accuracy-based scoring</strong> that rewards hitting beats on time</li>
+              <li><strong>Animated</strong> the player, the beats, and the end-of-level cutscene</li>
             </ul>
           </div>
         </div>
         <div class="project-btns">
-          <a href="https://always-up-late-dev.itch.io/rhythmic-harmony" target="_blank"><button
-              class="btn store-page">Store
-              Page</button></a>
+          <a href="https://always-up-late-dev.itch.io/rhythmic-harmony" target="_blank" rel="noopener" class="btn">Play on itch.io</a>
         </div>
       </div>
       <div class="project-gif">
-        <img src="assets/RhythmicHarmony_GameplayGif(70).gif" alt="RhythmicHarmony Gameplay GIF">
+        <video src="assets/RhythmicHarmony-Gameplay.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Rhythmic Harmony gameplay"></video>
       </div>
     </div>
 
     <!-- Star Flux -->
-    <div class="project-card">
+    <div class="project-card" id="star-flux">
       <div class="project-info">
         <div class="project-text">
           <div class="project-title">
             <h1>Star Flux</h1>
-            <p><i> Nov '24</i></p>
-            <p><Strong>Role: </Strong>Gameplay Programmer <Strong>| Game Engine:</Strong> Unity <Strong> | Team Size:</Strong> 4</i></p>
+            <p class="badge">🏆 Runner-up, Quantum Game Jam</p>
+            <p class="meta">
+              <span>Nov '24</span>
+              <span>Gameplay Programmer</span>
+              <span>Unity</span>
+              <span>Team of 4</span>
+            </p>
           </div>
           <div class="summary">
             <p>
-              A spaceship lost in deep space must find its way back to the research station. However, with limited
-              supplies and a path riddled with quantum anomalies,
-              survival is uncertain. Navigate the ship and turn these anomalies to your advantage in order to make it
-              back
-              home.
-            </p>
-            <p>
-              This game was developed in 1 week for the <strong></strong>Quantum Game Jam</strong>, hosted by
-              <strong>Quantum Realm Games and Indie Game Academy</strong>. The goal was to make
-              quantum behaviors conceptually more intuitive. As part of the rules of the jam, we had to use Quantum
-              Realm
-              Games' Quantum Forge Unity package, which allows us to simulate
-              quantum behvaiors within Unity.
+              Guide a lost spaceship home across a map of quantum anomalies. Made in 1 week for the <strong>Quantum Game Jam</strong>
+              (Quantum Realm Games × Indie Game Academy), whose goal was to make quantum behavior intuitive, using the alpha Quantum Forge Unity package.
             </p>
             <h3>What I did</h3>
             <ul>
-              <li>Developed a hexagonal tile-based map system allowing the player to move seamlessly between adjacent
-                tiles</li>
-              <li>Worked with Quantum Forge in its alpha version, learning how it mimics quantum behavior, discorvering
-                bugs, and providing feedback to Quantum Realms for improvements</li>
-              <li>Implemented gameplay mechanics using quantum behavior such as flux tiles that collapses into either a
-                safe or danger state,
-                entangling paired flux tiles to be the opposite of state as its pair when measured, and using phase
-                rotation to change the probability of what state
-                a flux tile will collapse into
-              </li>
+              <li><strong>Turned quantum mechanics into gameplay</strong>: flux tiles that collapse into safe or danger states, entangled pairs that resolve to opposite states, and phase rotation that shifts the odds</li>
+              <li><strong>Built a hexagonal tile map</strong> with smooth movement between adjacent tiles</li>
+              <li><strong>Found and reported bugs</strong> in Quantum Forge's alpha, giving feedback to Quantum Realm Games</li>
             </ul>
           </div>
         </div>
         <div class="project-btns">
-          <a href="https://wafflefish.itch.io/star-flux" target="_blank"><button class="btn store-page">Store Page</button></a>
-          <!-- <a href="asol.html" target="_blank"><button class="btn read-more">Read More</button></a> -->
+          <a href="https://wafflefish.itch.io/star-flux" target="_blank" rel="noopener" class="btn">Play on itch.io</a>
         </div>
       </div>
       <div class="project-gif">
-        <img src="assets/StarFlux-DemoGif.gif" alt="StarFlux Demo">
+        <video src="assets/StarFlux-Demo.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Star Flux gameplay demo"></video>
       </div>
     </div>
 
     <!-- Project Security -->
-    <div class="project-card">
+    <div class="project-card" id="project-security">
       <div class="project-info">
         <div class="project-text">
           <div class="project-title">
             <h1>Project Security</h1>
-            <p><i> Jan '25 - May '25</i></p>
-            <p><Strong>Role: </Strong>Programmer <Strong>| Game Engine:</Strong> Unity 6<Strong> | Team Size:</Strong> 3</i></p>
+            <p class="meta">
+              <span>Jan '25 – May '25</span>
+              <span>Programmer</span>
+              <span>Unity 6</span>
+              <span>Team of 3</span>
+            </p>
           </div>
           <div class="summary">
             <p>
-              In this 3rd person hack-and-slash roguelite you act as a Grim Reaper hunting down corruption. 
-              You have access to a set of basic scythe swings, as well as a growing list of special attacks that can be initiated by the press of a button. 
-              Defeat enemies, collect their processing power, and use it to purchase more special attacks.
-              This was my senior capstone project.
+              A 3rd-person hack-and-slash roguelite where you play a Grim Reaper hunting down corruption. Defeat enemies,
+              collect their processing power, and spend it on new special attacks. My senior capstone project at CSU Fullerton.
             </p>
+            <!-- TODO: add specifics, e.g. "5 enemy types driven by a state machine" and number of levels -->
             <h3>What I did</h3>
             <ul>
-              <li>Designed and implemented every enemy actions and behaviors</li>
-              <li>Collaborated with the other programmer to make combat between player and enemies smooth</li>
-              <li>Desinged and implemented levels</li>
+              <li><strong>Designed and programmed all enemy AI</strong>: every enemy's actions and behaviors</li>
+              <li><strong>Tuned player-vs-enemy combat</strong> with the other programmer so fights feel smooth</li>
+              <li><strong>Designed and built the levels</strong></li>
             </ul>
           </div>
         </div>
         <div class="project-btns">
-          <a href="https://korntortilla.itch.io/project-security" target="_blank"><button class="btn store-page">Store Page</button></a>
-          <!-- <a href="asol.html" target="_blank"><button class="btn read-more">Read More</button></a> -->
-          <a href="https://github.com/KornTortilla/Project-Security" target="_blank"><button class="btn github">Github Repo</button></a>
+          <a href="https://korntortilla.itch.io/project-security" target="_blank" rel="noopener" class="btn">Play on itch.io</a>
+          <a href="https://github.com/KornTortilla/Project-Security" target="_blank" rel="noopener" class="btn">GitHub Repo</a>
         </div>
       </div>
       <div class="project-media">
-        <iframe src="https://www.youtube.com/embed/N2dJtXXvLho?si=8o5TAer2DBmWnDNQ" frameborder="1"
+        <iframe src="https://www.youtube.com/embed/N2dJtXXvLho" title="Project Security gameplay"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
+          allowfullscreen loading="lazy">
         </iframe>
       </div>
     </div>
 
-    <a href="https://wafflefish.itch.io/" target="_blank"><button class="btn more-projects-btn">More games on my
-        Itch.Io</button></a>
-  </section>
-  <section class="moreProjects"></section>
-
-  <section class="resume">
-    <div class="resume-wrap">
-      <h2 style="font-size: clamp(20px, 5vw, 60px); color: #d07f00">Resume</h2>
-      <img src="assets/Jhoshua A Resume Pic.png" alt="Picture of Resume" class="resume-pic">
-      <a href="assets/Jhoshua_A_Resume.pdf" download="Jhoshua_A_Resume.pdf" style="text-decoration: none">
-        <button class="btn">Download Resume</button>
-      </a>
-    </div>
+    <a href="https://wafflefish.itch.io/" target="_blank" rel="noopener" class="btn more-projects-btn">More games on my itch.io</a>
   </section>
 
   <footer class="footer">
-    <span style="font-size: clamp(10px, 5vw, 16px)"><a href="ampojhoshua@gmail.com">ampojhoshua@gmail.com</a></span> |
-    <a href="https://github.com/Waffle-Fish" style="text-decoration: none"><i class="fa-brands fa-github fa-2x"></i></a>
-    | <a href="https://wafflefish.itch.io/" style="text-decoration: none"><i class="fa-brands fa-itch-io fa-2x"></i></a>
-    | <a href="https://www.linkedin.com/in/jhoshua-ampo/" style="text-decoration: none"><i
-        class="fa-brands fa-linkedin fa-2x"></i></a>
+    <a href="mailto:ampojhoshua@gmail.com">ampojhoshua@gmail.com</a> |
+    <a href="https://github.com/Waffle-Fish" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github fa-2x"></i></a> |
+    <a href="https://wafflefish.itch.io/" target="_blank" rel="noopener" aria-label="itch.io"><i class="fa-brands fa-itch-io fa-2x"></i></a> |
+    <a href="https://www.linkedin.com/in/jhoshua-ampo/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fa-2x"></i></a> |
+    <a href="assets/Jhoshua_A_Resume.pdf" download="Jhoshua_A_Resume.pdf">Resume (PDF)</a>
   </footer>
 </body>
 
